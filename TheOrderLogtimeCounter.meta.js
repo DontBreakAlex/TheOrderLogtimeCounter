@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     The Order logtime counter
-// @version  1.0.2
+// @version  1.0.3
 // @include  https://profile.intra.42.fr/
 // @run-at   document-idle
 // @license  GPL-3.0-or-later

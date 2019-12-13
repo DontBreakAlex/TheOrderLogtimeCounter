@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     The Order logtime counter
-// @version  1.0.2
+// @version  1.0.3
 // @include  https://profile.intra.42.fr/
 // @run-at   document-idle
 // @license  GPL-3.0-or-later
@@ -31,7 +31,7 @@ function updateLogtime() {
 			index--;
 		}
 	}
-	else updateLogtime.logtime[1]++;
+	else if (document.getElementsByClassName("user-poste-status")[0].innerText != "Unavailable") updateLogtime.logtime[1]++;
 	while (updateLogtime.logtime[1] >= 60) {
 		updateLogtime.logtime[1] -= 60;
 		updateLogtime.logtime[0]++;
